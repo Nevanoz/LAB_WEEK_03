@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.content.Context
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,8 +30,7 @@ class ListFragment : Fragment(), View.OnClickListener{
             throw RuntimeException("Must implement CoffeeListener")
         }
     }
-    override fun onCreate(...)
-    override fun onCreateView(...)
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val coffeeList = listOf<View>(
@@ -46,8 +46,5 @@ class ListFragment : Fragment(), View.OnClickListener{
         v?.let{
                 coffee -> coffeeListener.onSelected(coffee.id)
         }
-    }
-    companion object {
-        …
     }
 }
