@@ -1,19 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
     tools:context=".ListFragment">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:text="@string/coffee_list"/>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -40,5 +42,19 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="@string/latte_title" />
+
+        <TextView
+            android:id="@+id/espresso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/espresso_title" />
+
+        <TextView
+            android:id="@+id/cappuccino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/cappuccino_title" />
     </LinearLayout>
 </ScrollView>
